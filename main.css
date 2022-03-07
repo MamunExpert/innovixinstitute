@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color ;
+}
+.nav-box ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.logo{
+    padding: 0px 5px;
+    height: 60px;
+    
+}
+.nav-box ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px ;
+    padding: 15px 25px;
+}
+
+.nav-box ul li a:hover{
+    background-color: rgb(255, 94, 0);
+    color: white;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:aqua;
+    height: 80px;
+    border-radius: 50px;
+    margin: 50px;
+}
+nav:hover{
+    box-shadow: 0px 5px 10px;
+    transition: 1s;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(255, 94, 0);
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+
+.btn{
+margin-right: 10px;
+}
+
+.btn a:hover{
+    color: rgb(255, 94, 0);
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+    transition: .4s;
+}
+
+.enrole{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.intro h1{
+    font-size: 70px;
+    color: white;
+    
+}
+
+.upper{
+    font-size: 40px;
+    color:rgb(255, 0, 221);
+
+
+}
+
+.btn-2 button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+  }
