@@ -3,11 +3,12 @@
     padding: 0;
 }
 
-body{
+.nav-container{
     background-image: url(images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: color ;
+    height: 100vh;
+    width: 100%;
 }
 .nav-box ul{
     list-style-type: none;
@@ -39,10 +40,9 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:aqua;
     height: 80px;
     border-radius: 50px;
-    margin: 50px;
+
 }
 nav:hover{
     box-shadow: 0px 5px 10px;
