@@ -52,7 +52,7 @@ nav:hover{
 .btn a{
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     background-color: rgb(255, 94, 0);
     padding: 15px 25px;
@@ -85,28 +85,41 @@ margin-right: 10px;
 .upper{
     font-size: 40px;
     color:rgb(255, 0, 221);
-
-
 }
 
-.btn-2 button{
+.btn-2 .button{
+    text-decoration: none;
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 30px;
     background-color: #f4511e;
-    border: none;
+    border: 4px solid transparent;
     color: #FFFFFF;
     text-align: center;
     font-size: 30px;
-    padding: 15px;
+    font-weight: bold;
+    padding: 10px;
     width: 200px;
-    transition: all 0.5s;
     cursor: pointer;
     margin-top: 10px;
   }
 
+  .btn-2 .button:hover{
+    background-color: white;
+    border: 4px solid #f4511e;
+    color: #f4511e;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+
+
+
+
+/*     Cources Section     */
+  
 .cources-container{
     width: 100%;
-    padding: 100px 0px;
+    margin-top: 100px;
 }
 
 .cources-title{
@@ -120,14 +133,15 @@ margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 450px;
+    min-height: 400px;
 }
 
 .box{
-    height: 433px;
-    width: 330px;
-    padding: 20px 35px;
+    height: 260px;
+    width: 240px;
+    padding: 8px 8px;
     background-color:#004a61;
+    border: 4px solid transparent;
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -135,23 +149,31 @@ margin-right: 10px;
     text-align: center;
 }
 
+.box:hover{
+    border: 4px solid #f4511e;
+    transition: 0.5s;
+    background-color:#011731;
+    border-radius: 0px;
+
+}
 .box i{
-    font-size: 60px;
+    font-size: 40px;
     color: white;
-    margin: 20px 0px;
+    margin: 10px;
     text-align: center;
 }
 
 .box h2{
     color: white;
-    margin: 10px;
-    font-size: 35px;
+    margin: 5px 10px ;
+    font-size: 25px;
 }
 
 .box p{
-    font-size: 22px;
+    font-size: 13px;
     color: rgb(253, 255, 110);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    padding: 0px 5px;
 }
 
 .box .button{
@@ -160,7 +182,7 @@ margin-right: 10px;
     background-color: #f4511e;
     border: 3px solid transparent;
     color: #FFFFFF;
-    padding: 10px 30px;
+    padding: 8px 20px;
     font-weight: bold;
 }
 
@@ -170,4 +192,151 @@ margin-right: 10px;
     color: #f4511e;
     border: 3px solid #f4511e;
     transition: .5s;
+}
+
+
+
+/*    Mentor Section      */
+
+
+.mentor-container{
+    width: 100%;
+    margin: 80px 0px ;
+}
+
+.mentor-title{
+    color: #f4511e;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.mentor-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 400px;
+}
+
+.person{
+    height: 280px;
+    width: 150px;
+    margin: 5px;
+    padding: 20px 10px;
+    position: relative;
+    background-color: rgb(211, 233, 251);
+    overflow: hidden;
+    text-align: left;
+    border: 2px solid rgb(0, 204, 255);
+    border-radius: 5px;
+}
+
+.person:hover{
+    border: 2px solid blue;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.person-details .button{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 4px 3px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.person-details p{
+    font-size: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.person h2{
+    color: blue;
+    font-size: 15px;
+    margin: 5px 0px;
+}
+
+.person img{
+    height: 120px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.person-details .button:hover{
+    background-color: #f4511e;
+    color: white;
+    border: 2px solid #f4511e;
+    transition: 0.4s;
+}
+
+.contact-container{
+    width: 100%;
+    background-color: rgb(3, 1, 104);
+    height: 400px;
+}
+
+.float-box{
+    text-align: center;
+    width: 500px;
+    height: 350px;
+    background-color: #011731;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px red;
+}
+
+
+.contact-container h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+form .input-field{
+    outline: none;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    padding: 0px 10px;
+    border: 2px solid blue;
+    box-shadow: 0px 1px 5px white;
+}
+
+form .input-field:focus{
+    background-color: #63fde9;
+    box-shadow: 0px 1px 5px red;
+    transition: 0.5s;
+}
+
+#typebar{
+    width: 400px;
+    height: 70px;
+}
+
+form a{
+    text-decoration: none;
+    color: #011731;
+    width: 400px;
+    background-color: white;
+    padding: 5px 165px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 0px 5px red;
+}
+
+form a:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 5px white;
+    transition: 0.5s;
 }
